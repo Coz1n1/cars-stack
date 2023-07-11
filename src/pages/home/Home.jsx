@@ -34,7 +34,6 @@ export const Home = () => {
         <div className='left-header-content'>
         <span className='left-header'>Plan your trip and save <span className='left-header-blue'>big</span> with us</span>
         </div>
-
         <span className='home-left-p'>You will find the car of your dreams with us. Just choose a model and enjoy your journey with small price, unlimited distance and many more!</span>
         <div className='left-buttons'>
           <button className='home-rent-button'>Rent Now<CheckCircle size={23} color="white" weight="fill" className='button-icon'/></button>

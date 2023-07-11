@@ -474,6 +474,10 @@
     filter: drop-shadow(0 0 0.75rem rgba(150, 150, 151, 0.5));
 }
 
+.car-container:hover {
+    filter: drop-shadow(0 0 2rem rgba(150, 150, 151, 0.6));
+}
+
 .car-name {
     font-size: 22pt;
     font-weight: bold;
@@ -487,3 +491,64 @@
     justify-content: center;
 }
 
+.car-price {
+    width: 100%;
+    font-weight: bold;
+    font-size: 14pt;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.car-button-content {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0px 10px 0px;
+}
+
+.car-book-button {
+    width: 170px;
+    height: 50px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 13pt;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.car-book-button:hover {
+    background-color: white;
+    border: 1px solid blue;
+    color: blue;
+    cursor: pointer;
+}
+
+.car-more {
+    width: 150px;
+    color: gray;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.car-description {
+    opacity: 0;
+    margin-top: 10px;
+    color: gray;
+    font-size: 11pt;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: 0.3s ease-out;
+}
+
+.car-description.show {
+    opacity: 1;
+    max-height: 9999px;
+    transition: 0.3s ease-out;
+}
+
+.car-more-wrapper {
+    padding: 10px;
+}

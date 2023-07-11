@@ -24,23 +24,27 @@ export const CARS = [
         name: 'BMW M3',
         price: 50,
         image:  car1,
+        description: 'lorem ipsum',
     },
     {
         id: 2,
         name: 'Audi S7',
         price: 63,
         image:  car2,
+        description: 'lorem ipsum',
     },
     {
         id: 3,
         name: 'Mercedes',
         price: 55,
         image:  car3,
+        description: 'lorem ipsum',
     },
     {
         id: 4,
         name: 'Skoda Octavia',
         price: 37,
         image:  car4,
+        description: 'lorem ipsum',
     },
 ]

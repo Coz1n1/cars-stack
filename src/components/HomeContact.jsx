@@ -17,6 +17,7 @@ export const HomeContact = () => {
     <div className={opened === true ? 'contact-form open' : 'contact-form'} >
       <div className='form-header' onClick={isOpen}>Contact us <ArrowFatDown size={32} color="white" className={opened === true ? 'opened' : 'closed'}/></div>
       <div className='form-content'>
+        <span className='home-contact-header'>Ask us</span>
         <input type='text' placeholder='Email...' className='home-contact-input'/>
         <input type='text' placeholder='Topic...' className='home-contact-input'/>
         <textarea placeholder='Email...' className='home-contact-textarea'/>
