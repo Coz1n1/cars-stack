@@ -1,0 +1,489 @@
+* {
+    box-sizing: border-box;
+}
+
+.home-carpng {
+    width: 900px;
+}
+
+.home-wrapper {
+    display: flex;
+    height: 90vh;
+    position: relative;
+    overflow-x:hidden;
+    overflow-y: hidden;
+}
+
+.home-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 200px;
+    z-index: 12;
+    animation: 1s slideInFromLeft;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.home-left-p {
+    font-size: 14pt;
+    color: gray;
+    margin-top: 20px;
+}
+
+.home-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 12;
+    animation: 1s slideInFromRight;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(+100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.home-rent-button {
+    width: 160px;
+    height: 60px;
+    font-size: 12pt;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: blue;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 10px rgba(14, 14, 228, 0.2);
+}
+
+.home-more-button {
+    width: 160px;
+    height: 60px;
+    font-size: 12pt;
+    margin: 10px;
+    background-color: black;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.svg-shape {
+    position: absolute;
+    top: 20%;
+}
+
+.left-buttons {
+    display: flex;
+    margin-top: 20px;
+}
+
+.left-header {
+    font-size: 45pt;
+    font-weight: bold;
+}
+
+.left-header-blue {
+    font-size: 45pt;
+    font-weight: bold;
+    color: blue;
+}
+
+.left-header-content {
+    display: flex;
+}
+
+.button-icon {
+    margin-left: 5px;
+}
+
+.home-left-cloud1 {
+    position: absolute;
+    top: 20%;
+    left: 27%;
+}
+
+.home-left-cloud2 {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+
+.home-left-cloud3 {
+    position: absolute;
+    top: 15%;
+    left: 40%;
+}
+
+.home-book-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-book-wrapper {
+    display: flex;
+}
+
+.book-title {
+    font-size: 22pt;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.book-label {
+    display: flex;
+    align-items: center;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.book-input {
+    width: 400px;
+    height: 30px;
+    border: none;
+    font-size: 12pt;
+    color: gray;
+}
+
+.book-element {
+    margin-left: 25px;
+    margin-top: 20px;
+    height: 100px;
+    width: 450px;
+}
+
+.book-icon {
+    margin-right: 5px;
+}
+
+.book-search {
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-search-button {
+    width: 450px;
+    height: 45px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 10px 10px 10px rgba(14, 14, 228, 0.2);
+    background-color: blue;
+    font-size: 12pt;
+}
+
+.rental-description {
+    margin-top: 100px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rental-description-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rental-description-header-content {
+    font-size: 30pt;
+    font-weight: bold;
+}
+
+.rental-description-header-paragraph {
+    font-weight: bold;
+    font-size: 13pt;
+}
+
+.blue {
+    color: blue;
+}
+
+.rental-steps {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin-top: 40px;
+}
+
+.rental-steps-step {
+    margin-right: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 270px;
+    border-radius: 10px;
+}
+
+.rental-steps-step:hover {
+    background-color: black;
+    color: white;
+}
+
+.rental-steps-step-description {
+    text-align: center;
+    color: gray;
+}
+
+.rental-steps-step-header {
+    font-size: 25pt;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.office-description {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    overflow-x: hidden;
+}
+
+.office-description-left {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.office-description-right {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.office-description-image {
+    width: 1100px;
+}
+
+.office-description-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.office-description-sides-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.office-description-left-header {
+    font-size: 18pt;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.application-reminder {
+    width: 100%;
+    height: 140px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.application-reminder-description {
+    font-size: 12pt;
+    font-weight: 200;
+    color: gray;
+}
+
+.application-reminder-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 20px;
+}
+
+.application-reminder-png {
+    width: 200px;
+}
+
+.office-description-left-paragraph {
+    color: gray;
+    font-size: 13pt;
+    margin-bottom: 10px;
+}
+
+.office-description-button {
+    width: 160px;
+    height: 60px;
+    font-size: 12pt;
+    margin-top: 10px;
+    background-color: blue;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 10px rgba(14, 14, 228, 0.2);
+}
+
+.office-description-paragraph {
+    color: gray;
+}
+
+.office-description-image-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.office-description-right-element {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    margin-left: 30px;
+}
+
+.office-description-left-headerbig {
+    font-size: 25pt;
+    font-weight: bold;
+    margin: 10px;
+    margin-left: 0;
+}
+
+.faq-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.faq-header {
+    font-size: 20pt;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.question-container {
+    font-size: 15pt;
+    width: 600px;
+    border-bottom: 2px solid rgb(177, 175, 175);
+}
+
+.question-content {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.question-content.active {
+    background-color: #0099ff;
+    box-shadow: 10px 10px 10px rgba(150, 150, 151, 0.5);
+    color: white;
+}
+
+.answer-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    color: gray;
+    transition: 0.4s ease-out;
+}
+
+.answer-content.show {
+    margin-top: 10px;
+    opacity: 1;
+    height: auto;
+    max-height: 9999px;
+    transition: 0.4s ease-out;
+}
+
+.rotate-down {
+    transform: rotate(180deg);
+    transition: 0.4s ease-out;
+}
+
+.rotate-up {
+    transform: rotate(0deg);
+    transition: 0.4s ease-out;
+}
+
+.cars-display {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.car-container {
+    width: 600px;
+    min-height: 300px;
+    margin: 20px;
+    background-color: white;
+    filter: drop-shadow(0 0 0.75rem rgba(150, 150, 151, 0.5));
+}
+
+.car-name {
+    font-size: 22pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+.car-image {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+

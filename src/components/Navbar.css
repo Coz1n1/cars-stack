@@ -1,0 +1,81 @@
+.navbar-container {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+.left-car {
+    font-size: 18pt;
+    font-weight: bold;
+    color: blue;
+}
+
+.left-stack {
+    font-size: 18pt;
+}
+
+.mid {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-in-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 15pt;
+    width: 120px;
+    height: 60px;
+    background-color: blue;
+    border-radius: 5px;
+    margin-right: 10px;
+    box-shadow: 10px 10px 10px rgba(14, 14, 228, 0.2);
+}
+
+.register-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-size: 15pt;
+    width: 120px;
+    height: 60px;
+}
+
+.navigation-element {
+    margin: 8px;
+    text-decoration: none;
+    color: black;
+    font-size: 15pt;
+}
+
+.navigation-element:hover {
+    color: blue;
+    transition: 0.5s;
+}

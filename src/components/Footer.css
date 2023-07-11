@@ -1,0 +1,102 @@
+.footer-container {
+    width: 100%;
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column;
+}
+
+.footer-left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+}
+
+.footer-mid {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.footer-right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.footer-header {
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.footer-left-company {
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+.footer-left-company-blue {
+    font-size: 18pt;
+    color: blue;
+}
+
+.footer-element {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.footer-paragraph {
+    color: gray;
+    margin-top: 10px;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-top-wrapper {
+    display: flex;
+}
+
+.footer-bottom-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.footer-bottom-element {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.footer-input {
+    width: 200px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 10pt;
+    height: 40px;
+}
+
+.footer-button {
+    margin-left: 10px;
+    height: 40px;
+    width: 100px;
+    border: none;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    font-size: 12pt;
+    box-shadow: 10px 10px 10px rgba(150, 150, 151, 0.4);
+    cursor: pointer;
+    border-radius: 5px;
+}

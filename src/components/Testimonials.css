@@ -1,0 +1,87 @@
+.testimonials-container {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.testimonials-header {
+    font-size: 18pt;
+    font-weight: bold;
+    text-align: center;
+    color: blue;
+}
+
+.testimonials-description {
+    color: gray;
+    margin-top: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.testimonials-header-small {
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.testimonials-examples {
+    display: flex;
+}
+
+.testimonials-example {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    height: 200px;
+    box-shadow: 10px 10px 10px rgba(150, 150, 151, 0.7);
+}
+
+.testimonials-svg {
+    position: absolute;
+}
+
+.testimonials-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 12;
+}
+
+.testimonials-example-description {
+    text-align: center;
+    margin-top: 20px;
+    color: gray;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15pt;
+}
+
+.testimonials-example-images {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 30%;
+}
+
+.testimonials-example-images-image {
+    width: 50px;
+}
+
+.testimonials-nickname {
+    font-size: 10pt;
+    font-weight: bold;
+}
