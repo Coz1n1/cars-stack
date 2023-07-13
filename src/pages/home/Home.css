@@ -156,6 +156,7 @@
 
 .home-book-wrapper {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .book-title {
@@ -466,6 +467,15 @@
     flex-wrap: wrap;
 }
 
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1 !important;
+}
+
 .car-container {
     width: 600px;
     min-height: 300px;
@@ -551,4 +561,175 @@
 
 .car-more-wrapper {
     padding: 10px;
+}
+
+.car-specification {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.car-specification-item-h {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-right: 0px;
+    height: 40px;
+    font-weight: bold;
+}
+
+.car-specification-item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    height: 40px;
+    font-weight: bold;
+}
+
+.car-spec-content {
+    display: flex;
+    margin-top: 5px;
+}
+
+.car-spec-header {
+    width: 100%;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    .home-left {
+        margin-left: 0;
+    }
+
+    .home-right {
+        display: none;
+    }
+
+    .home-left-cloud1 {
+        display: none;
+    }
+    
+    .home-left-cloud2 {
+        display: none;
+    }
+    
+    .home-left-cloud3 {
+        display: none;
+    }
+
+    .left-header-content{
+        text-align: center;
+    }
+
+    .home-left-p {
+        text-align: center;
+    }
+
+    .left-buttons {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .book-element {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .book-search {
+        margin: 0;
+        width: 100%;
+    }
+
+    .book-label {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .book-input {
+        width: 90%;
+    }
+
+    .book-search-button {
+        width: 90%;
+    }
+
+    .rental-steps {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .rental-description {
+        height: auto;
+    }
+
+    .rental-description-header {
+        text-align: center;
+    }
+
+    .rental-steps-step {
+        margin-right: 0;
+    }
+
+    .book-title {
+        margin-left: 0;
+    }
+
+    .application-reminder {
+        display: none;
+    }
+
+    .office-description-image{
+        width: 100%;
+    }
+
+    .office-description-sides-wrapper {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .office-description-left{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .office-description-left-headerbig{
+        font-size: 18pt;
+    }
+
+    .office-description-left-paragraph {
+        text-align: center;
+    }
+    
+    .office-description-right {
+        width: 100%;
+    }
+
+    .question-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .car-container {
+        width: 90%;
+    }
+
+    .car-image {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .car-image-props {
+        width: 100%;
+    }
 }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { Navbar } from '../../components/Navbar'
 import './Home.css'
 import { ArrowCircleDown, ArrowRight, Balloon, CalendarCheck, CalendarX, Car, CarSimple, CellSignalFull, CheckCircle, Cloud, Coins, HandPalm, MapPin, Phone} from 'phosphor-react'
@@ -8,8 +8,32 @@ import { faqs, CARS } from '../../data'
 import { HomeContact } from '../../components/HomeContact'
 import { CarModel } from './Car'
 
+
+
 export const Home = () => {
   const [selected, setSelected] = useState(null)
+  const [isIntersecting, setIsIntersecting] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsIntersecting(entry.isIntersecting);
+      },
+      { rootMargin: "-200px" }
+    );
+    observer.observe(ref.current);
+
+    return () => observer.disconnect();
+  }, [isIntersecting]);
+
+  useEffect(() => {
+    if (isIntersecting) {
+      ref.current.querySelectorAll(".fade-in").forEach((el) => {
+        el.classList.add("appear");
+      });
+    }
+  }, [isIntersecting]);
 
   const visible = (i) => {
     if(selected === i) {
@@ -50,10 +74,10 @@ export const Home = () => {
       <div className='book-element'>
       <label for="carSelect" className='book-label'><Car size={32} color="blue" className='book-icon'/>Choose your car:</label>
       <select name="cars" id="carSelect" className='book-input'>
-      <option value="passat">Passat</option>
-      <option value="2">2</option>
-      <option value="3">Passat</option>
-      <option value="4">Passat</option>
+      <option value="passat">BMW M3</option>
+      <option value="2">Audi S7</option>
+      <option value="3">Mercedes</option>
+      <option value="4">Skoda Octavia</option>
       </select>
       </div>
       <div className='book-element'>
@@ -87,11 +111,13 @@ export const Home = () => {
       </div>
       </div>
     </div>
-    <div className='cars-display'>
+    <main ref={ref}>
+    <div className='cars-display fade-in'>
         {CARS.map((item, i)=>(
           <CarModel data={item} key={i}/>
         ))}
     </div>
+    </main>
     <div className='rental-description'>
       <div className='rental-description-header'>
         <span className='rental-description-header-content'>Quick & <span className='blue'>Easy</span> Rental</span>
@@ -125,7 +151,7 @@ export const Home = () => {
     <div className='office-description'>
       <div className='office-description-wrapper'>
         <div className='office-description-image-content'>
-      <img src={require('../../assets/home_cars.png')} alt="" className='office-description-image'/>
+          <img src={require('../../assets/home_cars.png')} alt="" className='office-description-image'/>
       </div>
       <div className='office-description-sides-wrapper'>
       <div className='office-description-left'>

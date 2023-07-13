@@ -18,7 +18,7 @@ export const Testimonials = () => {
       <div className='testimonials-examples'>
         <div className='testimonials-example'>
           <div className='testimonials-example-description'>
-            <span>Good</span>
+            <span>Very fast rental and nice service</span>
           </div>
           <div className='testimonials-example-images'>
             <img src={require('../assets/quotes.png')} alt="" className='testimonials-example-images-image'/>
@@ -28,7 +28,7 @@ export const Testimonials = () => {
         </div>
         <div className='testimonials-example'>
           <div className='testimonials-example-description'>
-            <span>Nice</span>
+            <span>Very attractive prices compared to other rental companies</span>
           </div>
           <div className='testimonials-example-images'>
             <img src={require('../assets/quotes.png')} alt="" className='testimonials-example-images-image'/>
@@ -38,7 +38,7 @@ export const Testimonials = () => {
         </div>
         <div className='testimonials-example'>
           <div className='testimonials-example-description'>
-            <span>Decent</span>
+            <span>Good selection of cars and decent price</span>
           </div>
           <div className='testimonials-example-images'>
             <img src={require('../assets/quotes.png')} alt="" className='testimonials-example-images-image'/>

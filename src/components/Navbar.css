@@ -1,8 +1,9 @@
 .navbar-container {
+    width: 100%;
     display: flex;
     height: 100px;
     justify-content: space-between;
-
+    align-items: center;
 }
 
 .left {
@@ -78,4 +79,55 @@
 .navigation-element:hover {
     color: blue;
     transition: 0.5s;
+}
+
+.mobile-nav-menu {
+    display: none;
+}
+
+@media screen and (max-width: 880px){
+    .navbar-container {
+        position: relative;
+        width: 100%;
+    }
+
+    .left {
+        justify-content: flex-start;
+        flex: 1;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .mobile-nav-menu {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .navigation-element {
+        color: black;
+        padding: 20px;
+    }
+
+    .mid {
+        opacity: 0;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        right: 100%;
+        top: 100%;
+        height: 80vh;
+        font-weight: bold;
+    }
+
+    .mid.active {
+        opacity: 1;
+        width: 100%;
+        right: 0;
+        background-color: white;
+        z-index: 99;
+        transition: 0.6s ease-out;
+    }
 }

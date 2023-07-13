@@ -5,13 +5,7 @@ import { ArrowFatDown } from 'phosphor-react'
 export const HomeContact = () => {
     const [opened, setOpened] = useState(false)
 
-    const isOpen = () => {
-        if(opened === false) {
-            setOpened(!opened)
-        }else if(opened === true){
-            setOpened(!opened)
-        }
-    }
+    const isOpen = () => setOpened(!opened)
 
   return (
     <div className={opened === true ? 'contact-form open' : 'contact-form'} >

@@ -100,3 +100,22 @@
     cursor: pointer;
     border-radius: 5px;
 }
+
+@media screen and (max-width: 480px){
+    .footer-top-wrapper {
+        flex-direction: column;
+    }
+
+    .footer-mid {
+        align-items: center;
+    }
+
+    .footer-right {
+        align-items: center;
+    }
+
+    .footer-paragraph {
+        text-align: center;
+        width: 100%;
+    }
+}
